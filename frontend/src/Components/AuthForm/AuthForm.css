@@ -1,0 +1,137 @@
+.auth-page {
+    background-image: url('../../assets/images/paper.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.auth-form {
+    max-width: 700px;
+    margin: 0 auto;
+  padding: 48px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #F5F5F5;
+}
+
+.auth-form h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #605B56;
+}
+
+.form-p {
+    text-align: center;
+    color: #605B56;
+}
+
+.toggle-link {
+    color: inherit;
+    text-decoration: underline;
+    text-decoration-color: #382922;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.toggle-link:hover {
+    color: inherit;
+    text-decoration-color: #382922;
+}
+
+.input-group label {
+    display: block;
+    color: #605B56;
+    font-size: 16px;
+}
+
+.input-group-input,
+.auth-form input[type="text"],
+.auth-form input[type="email"],
+.auth-form input[type="password"] {
+    width: 100%;
+    height: 52px;
+    padding: 10px;
+    border: 1px solid #382922;
+    border-radius: 4px !important;
+    border-top-left-radius: 4px !important;
+    border-top-right-radius: 4px !important;
+    border-bottom-left-radius: 4px !important;
+    border-bottom-right-radius: 4px !important;
+    font-size: 16px;
+    color: #605B56;
+    margin-bottom: 10px;
+}
+
+.input-group-input:focus,
+.auth-form input[type="text"]:focus,
+.auth-form input[type="email"]:focus,
+.auth-form input[type="password"]:focus {
+    border: 1px solid #382922 !important;
+    border-radius: 4px !important;
+    border-top-left-radius: 4px !important;
+    border-top-right-radius: 4px !important;
+    border-bottom-left-radius: 4px !important;
+    border-bottom-right-radius: 4px !important;
+    outline: none; 
+}
+
+.input-group-input::placeholder,
+.auth-form input[type="text"]::placeholder,
+.auth-form input[type="email"]::placeholder,
+.auth-form input[type="password"]::placeholder {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 16px;
+    color: rgba(56, 41, 34, 0.5);
+}
+
+
+
+.toggle-button {
+    background: none;
+    border: none;
+    color: #605B56;
+    text-decoration: underline; 
+    cursor: pointer;
+}
+
+.toggle-button:active {
+    background-color: #817A6A50 !important;
+}
+
+.error {
+    color: #8D0202;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.col-lg-6 {
+    flex: 1;
+}
+
+/* Адаптивность формы авторизации */
+@media (max-width: 991.98px) {
+  .auth-form {
+    padding: 32px;
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .auth-form {
+    padding: 24px 16px;
+    border-radius: 0;
+  }
+
+  .auth-form h1,
+  .auth-form h2 {
+    font-size: 24px;
+  }
+
+  .input-group-input,
+  .auth-form input[type="text"],
+  .auth-form input[type="email"],
+  .auth-form input[type="password"] {
+    height: 48px;
+    font-size: 14px;
+  }
+}

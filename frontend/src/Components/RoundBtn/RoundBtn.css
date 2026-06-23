@@ -1,0 +1,21 @@
+.roundBtn {
+    padding: 9px 26px;
+    border: 2px solid #605B56;
+    border-radius: 50px;
+    background-color: #ffffff00;
+    color: #605B56;
+    font-size: large;
+    cursor: pointer;
+}
+
+.roundBtn:hover {
+    background-color: #ADC178;
+    border: 2px solid #605B56;
+    color: #605B56;
+}
+
+.roundBtn:active {
+    background-color: #798060ee !important;
+    border: 2px solid #605B56 !important;
+    color: #ffffffb8 !important;
+}

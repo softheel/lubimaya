@@ -1,0 +1,263 @@
+/* .header {
+    height: 72px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif !important;
+    color: #382922;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.header-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.header-icons .navLink {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+
+}
+
+.header-icons .icon {
+    width: 30px;
+    height: 30px;
+    color: #382922;
+    transition: opacity 0.3s ease;
+}
+
+.header-icons .icon:hover {
+    opacity: 0.7;
+}
+
+.navLink {
+    font-family: 'Roboto', sans-serif !important;
+    font-size: 16px;
+    color: #382922 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header .navbar-nav {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.header .navbar-nav .nav-link {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    color: #382922 !important;
+}
+
+h1 {
+    font-size: 80px;
+    font-family: 'Roboto Slab' !important;
+}
+
+h2 {
+    font-size: 60px;
+    font-family: 'Roboto Slab' !important;
+    color: #897C6B;
+} */
+
+.header {
+    height: 72px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif !important;
+    color: #382922;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.header-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.header-icons .navLink {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.header-icons .icon {
+    width: 30px;
+    height: 30px;
+    color: #382922;
+    transition: opacity 0.3s ease;
+}
+
+.header-icons .icon:hover {
+    opacity: 0.7;
+}
+
+.navLink {
+    font-family: 'Roboto', sans-serif !important;
+    font-size: 16px;
+    color: #382922 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Стили для Nav компонента Bootstrap */
+.header .navbar-nav {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.header .navbar-nav .nav-link {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    color: #382922 !important;
+}
+
+/* Бургер-кнопка - скрываем на больших экранах */
+.navbar-toggler-custom {
+    display: none !important;
+    border: none;
+    padding: 8px;
+    background: transparent;
+    cursor: pointer;
+}
+
+.navbar-toggler-custom:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+/* Стили для иконки бургера */
+.navbar-toggler-custom .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2856, 41, 34, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+    width: 24px;
+    height: 24px;
+}
+
+/* Мобильные стили */
+@media (max-width: 991.98px) {
+    .navbar-toggler-custom {
+        display: block !important;
+        order: 2;
+        margin-left: auto;
+    }
+    
+    .header .container {
+        flex-wrap: wrap;
+    }
+    
+    .header .container > img {
+        order: 1;
+    }
+    
+    /* Выпадающая часть бургера - оригинальные стили из первого варианта */
+    .navbar-collapse {
+        position: absolute;
+        top: 72px;
+        left: 0;
+        right: 0;
+        background-color: #fff;
+        box-shadow: 0 10px 20px rgba(56, 41, 34, 0.15);
+        z-index: 1000;
+        padding: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .navbar-nav {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        gap: 0;
+        margin-bottom: 20px;
+    }
+    
+    .navbar-nav .nav-item {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    .navbar-nav .navLink {
+        padding: 12px 0 !important;
+        border-bottom: 1px solid rgba(56, 41, 34, 0.1);
+        width: 100%;
+        display: block;
+    }
+    
+    .navbar-nav .navLink:hover {
+        background-color: rgba(137, 124, 107, 0.05);
+        padding-left: 10px !important;
+    }
+    
+    .header-right-section {
+        width: 100%;
+        justify-content: center;
+        padding-top: 20px;
+        border-top: 1px solid rgba(56, 41, 34, 0.1);
+    }
+    
+    .header-icons {
+        gap: 30px;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .header-icons .navLink {
+        border: none;
+        padding: 8px !important;
+    }
+    
+    .header-icons .navLink:hover {
+        background-color: transparent;
+        padding-left: 8px !important;
+    }
+    
+    .login-btn-mobile {
+        width: 100%;
+        max-width: 200px;
+        justify-content: center;
+    }
+}
+
+/* Для десктопа сохраняем текущие стили */
+@media (min-width: 992px) {
+    .navbar-collapse {
+        display: flex !important;
+        justify-content: space-between;
+        width: 100%;
+    }
+    
+    .mx-auto {
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
+
+h1 {
+    font-size: 80px;
+    font-family: 'Roboto Slab' !important;
+}
+
+h2 {
+    font-size: 60px;
+    font-family: 'Roboto Slab' !important;
+    color: #897C6B;
+}

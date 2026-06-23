@@ -1,0 +1,93 @@
+.footer {
+  width: 100%; /* Растягиваем на всю ширину */
+  background-color: #f5f5f5; /* Пример фона, можно изменить */
+  padding: 20px 0; /* Отступы сверху и снизу */
+}
+
+.footerNav {
+  display: flex;
+  flex-direction: column !important; 
+}
+
+.footerContent {
+  display: flex;
+  justify-content: space-between; /* Равномерное распределение контента */
+  align-items: flex-start;
+  width: 100%; /* Растягиваем на всю ширину */
+  /* max-width: 1200px; Ограничиваем максимальную ширину контента */
+  margin: 0 auto; /* Центрируем контент */
+}
+
+.footerIcons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footerForm {
+  opacity: 0.6;
+  padding: 16px;
+  border-radius: 6px;
+  border: 3px solid #605b56;
+  font-family: "Jost", sans-serif;
+  font-size: large;
+}
+
+.footerForm:focus {
+  box-shadow: 0 0 15px rgba(96, 91, 86, 0.6);
+  border: 3px solid #605b56;
+}
+
+.footer .navLink {
+  color: #382922 !important;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.footer .navbar-nav .nav-link {
+  color: #382922 !important;
+}
+
+/* Контакты во футере по левому краю */
+.footerNav,
+.footer-contact-item,
+.footer-contact-link,
+.footer-contact-text {
+  text-align: left !important;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.footer-contact-item {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 4px;
+}
+
+.footer-contact-link {
+  display: flex !important;
+  flex-direction: row;
+}
+
+.footer-contact-link img {
+  flex-shrink: 0;
+}
+
+.footer-catalog {
+  justify-content: flex-start;
+}
+
+/* Адаптивность футера */
+@media (max-width: 991.98px) {
+  .footerContent {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .logo-link {
+    margin-bottom: 12px;
+    justify-content: flex-start;
+  }
+}

@@ -1,0 +1,87 @@
+.cartCard {
+    width: 100%;
+    margin-bottom: 12px;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+}
+
+.cartItemContainer {
+    display: flex;
+    /* align-items: stretch; */
+    justify-content: space-between;
+    padding: 0px;
+}
+
+.cartImage {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    /* margin-right: 20px; */
+    border-radius: 5px;
+}
+
+.cartBody {
+    /* flex: 1; */
+    padding: 0px;
+    padding-left: 12px;
+    justify-content: space-between;
+}
+
+.cartTextGroup {
+    align-items: start;
+    justify-content: space-between;
+}
+
+.cartTitle {
+    margin: 0;
+    margin-top: 0 !important;
+}
+
+.cartText {
+    font-size: 16px !important;
+    margin: 0;
+    margin-top: 0 !important;
+}
+
+.cartActions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.quantityControl {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.quantityControl button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.quantityControl button:active {
+    background-color: #817A6A50 !important;
+}
+
+.quantityControl button img {
+    width: 20px;
+    height: 20px;
+}
+
+.removeButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.removeButton:active {
+    background-color: #817A6A50 !important;
+}
+
+.removeButton img {
+    width: 20px;
+    height: 20px;
+}

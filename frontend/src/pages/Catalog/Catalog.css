@@ -1,0 +1,162 @@
+/* .catalog {
+    min-height: 70vh;
+}
+
+.sort-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    
+}
+ 
+.cardContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.inputContainer {
+    width: 300px;
+    height: 48px;
+}
+
+.search-input {
+    padding: 10px 16px;
+    border: 1px solid #817A6A;
+    border-radius: 4px;
+    font-size: 16px;
+    border-left: none;
+}
+
+.search-input:focus {
+    border-color: #817A6A;
+    box-shadow: 0 0 5px #817A6A;
+}
+
+.search-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.input-group-text {
+    background-color: white;
+    border: 1px solid #817A6A;
+    border-right: none; 
+    border-radius: 4px 0 0 4px;
+} */
+
+.catalog {
+    min-height: 70vh;
+}
+
+.sort-container {
+    margin-bottom: 20px;
+}
+
+/* Сетка карточек каталога */
+.cardItems {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+.catalog-card {
+    padding-left: 12px;
+    padding-right: 12px;
+    display: flex;
+    justify-content: center;
+}
+
+/* 4 в ряд на больших экранах */
+@media (min-width: 1200px) {
+    .catalog-card {
+        width: 25%;
+    }
+}
+
+/* 2 в ряд на средних экранах */
+@media (min-width: 768px) and (max-width: 1199.98px) {
+    .catalog-card {
+        width: 50%;
+    }
+}
+
+/* 1 в ряд на маленьких экранах */
+@media (max-width: 767.98px) {
+    .catalog-card {
+        width: 100%;
+    }
+}
+
+/* Адаптивная ширина для поля поиска */
+.inputContainer {
+    width: 100%; /* По умолчанию занимает всю доступную ширину */
+    height: 48px;
+    max-width: 300px; /* Максимальная ширина */
+}
+
+/* На больших экранах фиксированная ширина */
+@media (min-width: 992px) {
+    .inputContainer {
+        width: 300px;
+    }
+}
+
+/* На маленьких экранах поиск на всю ширину контейнера */
+@media (max-width: 575.98px) {
+    .inputContainer {
+        max-width: 100%;
+    }
+}
+
+.search-input {
+    padding: 10px 16px;
+    border: 1px solid #817A6A;
+    border-radius: 4px;
+    font-size: 16px;
+    border-left: none;
+}
+
+.search-input:focus {
+    border-color: #817A6A;
+    box-shadow: 0 0 5px #817A6A;
+}
+
+.search-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.input-group-text {
+    background-color: white;
+    border: 1px solid #817A6A;
+    border-right: none; 
+    border-radius: 4px 0 0 4px;
+}
+
+/* Для кнопок категорий на мобильных устройствах */
+@media (max-width: 991.98px) {
+    .btn-group {
+        display: flex;
+        flex-wrap: wrap;
+        /* gap: 8px; */
+    }
+    
+    .btn-group > .btn {
+        margin-bottom: 8px;
+        flex: 1 0 auto;
+        min-width: 120px;
+    }
+}
+
+/* Адаптивность для заголовка */
+.catalogTitle {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+    .catalogTitle {
+        font-size: 24px;
+    }
+}

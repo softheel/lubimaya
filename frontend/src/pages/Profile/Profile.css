@@ -1,0 +1,232 @@
+.profile-section {
+    background-color: #F5F5F5;
+    padding: 48px;
+    border-radius: 10px;
+    height: fit-content;
+}
+
+.profile {
+    background-image: url('../../assets/images/paper.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.edit-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.edit-icon {
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.profile-info {
+    margin: 0 auto;
+}
+
+.profile-field {
+    display: flex;
+    align-items: start;
+    margin-bottom: 20px;
+}
+
+.profile-field label {
+    font-weight: bold;
+    text-align: left;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 16px;
+    color: #382922;
+    width: 150px;
+}
+
+.profile-field input {
+    flex: 1;
+    width: 100%;
+    height: 52px;
+    padding: 10px;
+    border: 1px solid #382922;
+    border-radius: 4px !important;
+    border-top-left-radius: 4px !important;
+    border-top-right-radius: 4px !important;
+    border-bottom-left-radius: 4px !important;
+    border-bottom-right-radius: 4px !important;
+    font-size: 16px;
+    font-family: 'Roboto Mono', monospace;
+    color: #605B56;
+    margin-bottom: 10px;
+}
+
+.profile-field input:focus,
+.profile-field input[type="text"]:focus,
+.profile-field input[type="email"]:focus {
+    border: 1px solid #382922 !important;
+    border-radius: 4px !important;
+    border-top-left-radius: 4px !important;
+    border-top-right-radius: 4px !important;
+    border-bottom-left-radius: 4px !important;
+    border-bottom-right-radius: 4px !important;
+    outline: none;
+}
+
+.profile-field input::placeholder,
+.profile-field input[type="text"]::placeholder,
+.profile-field input[type="email"]::placeholder {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 16px;
+    color: rgba(56, 41, 34, 0.5);
+}
+
+.profile-field span {
+    flex: 1;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 16px;
+    color: #382922;
+    text-align: left;
+}
+
+.edit-icon {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.edit-icon:hover {
+    opacity: 0.7;
+}
+
+.profile-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    justify-content: flex-end;
+}
+
+/* Стили для раздела избранных товаров */
+.favorites-section {
+    padding: 48px;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.favorites-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.favorite-item {
+    position: relative;
+    background-color: white;
+    border-radius: 10px;
+    padding: 1rem;
+    transition: transform 0.2s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.favorite-item:hover {
+    transform: translateY(-5px);
+}
+
+.favorite-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.favorite-info {
+    margin-top: 1rem;
+    text-align: left;
+}
+
+.favorite-info p {
+    text-align: left;
+    margin-bottom: 0.5rem;
+}
+
+.favorite-info h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: #605B56;
+    cursor: pointer;
+    text-align: left;
+}
+
+.favorite-info .price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #605B56;
+    margin-bottom: 0.5rem;
+    text-align: left;
+}
+
+.favorite-info .inStock {
+    color: #ADC178;
+}
+
+.favorite-info .outOfStock {
+    color: #8d0202c9;
+}
+
+.remove-favorite {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.remove-favorite:hover {
+    transform: scale(1.1);
+}
+
+.no-favorites {
+    text-align: center;
+    color: #605B56;
+    font-size: 1.1rem;
+    padding: 2rem;
+}
+
+/* Адаптивность профиля и избранного */
+@media (max-width: 991.98px) {
+    .profile-section,
+    .favorites-section {
+        padding: 32px;
+        margin-bottom: 16px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .profile-section,
+    .favorites-section {
+        padding: 24px 16px;
+        border-radius: 0;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    .favorites-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-field {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .profile-field label {
+        width: 100%;
+        margin-bottom: 4px;
+    }
+}

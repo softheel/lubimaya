@@ -1,0 +1,50 @@
+.admin-dashboard {
+    min-height: 100vh;
+    padding: 2rem 0;
+}
+
+.admin-title {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+    color: #897C6B;
+}
+
+.admin-menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.admin-card {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 2rem;
+    text-decoration: none;
+    color: #382922;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.admin-card:hover {
+    background: rgba(255, 255, 255, 1);
+    border-color: #382922;
+    transform: translateY(-5px);
+    text-decoration: none;
+    color: #382922;
+}
+
+.admin-card-content h3 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: #897C6B;
+}
+
+.admin-card-content p {
+    margin: 0;
+    opacity: 0.8;
+}
+
+
